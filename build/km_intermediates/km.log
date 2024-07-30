@@ -1,23 +1,5 @@
 ﻿  Building 'km' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
   Stamping D:\C++\sexy-driver\build\km_intermediates\km.inf
-  Stamping [Version] section with DriverVer=07/28/2024,21.10.5.913
-  main.cpp
+  Stamping [Version] section with DriverVer=07/30/2024,17.29.0.193
   km.vcxproj -> D:\C++\sexy-driver\build\km.sys
-  Done Adding Additional Store
-  Successfully signed: D:\C++\sexy-driver\build\km.sys
-  
-  Driver is 'Universal'.
-  .........................
-  Signability test complete.
-  
-  Errors:
-  None
-  
-  Warnings:
-  None
-  
-  Catalog generation complete.
-  D:\C++\sexy-driver\build\km\km.cat
-  Done Adding Additional Store
-  Successfully signed: D:\C++\sexy-driver\build\km\km.cat
-  
+SIGNTASK : SignTool error : No certificates were found that met all the given criteria.

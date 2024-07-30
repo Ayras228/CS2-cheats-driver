@@ -93,17 +93,34 @@ namespace driver
 		switch (control_code)
 		{
 		case codes::attach:
+			status = PsLookupProcessByProcessId(request->process_id, &target_proccess);
 			break;
 
 		case codes::read:
+			if (target_proccess != nullptr)
+			{
+				status = MmCopyVirtualMemory(target_proccess, request->target,
+											 PsGetCurrentProcess(), request->buffer,
+											 request->size, KernelMode, &request->return_size);
+			}
 			break;
 
 		case codes::write:
+			if (target_proccess != nullptr)
+			{
+				status = MmCopyVirtualMemory(PsGetCurrentProcess(), request->buffer,
+					target_proccess, request->target,
+					request->size, KernelMode, &request->return_size);
+			}
 			break;
 
 		default:
 			break;
 		}
+
+
+		irp->IoStatus.Status = status;
+		irp->IoStatus.Information = sizeof(Request);
 
 		IoCompleteRequest(irp, IO_NO_INCREMENT);
 
