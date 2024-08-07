@@ -1,4 +1,4 @@
-#include<ntifs.h>
+﻿#include<ntifs.h>
 
 extern "C"
 {
@@ -18,6 +18,7 @@ void debug_print(PCSTR text)
 #endif // DEBUG
 	KdPrintEx((DPFLTR_IHVDRIVER_ID, DPFLTR_INFO_LEVEL, text));
 }
+
 namespace driver
 {
 	namespace codes
@@ -53,7 +54,6 @@ namespace driver
 		return irp->IoStatus.Status;
 	}
 
-
 	NTSTATUS close(PDEVICE_OBJECT device_object, PIRP irp)
 	{
 		UNREFERENCED_PARAMETER(device_object);
@@ -62,6 +62,19 @@ namespace driver
 
 		return irp->IoStatus.Status;
 	}
+
+	VOID unload(PDRIVER_OBJECT driver_object)
+	{
+		UNICODE_STRING symbolic_link;
+		RtlInitUnicodeString(&symbolic_link, L"\\DosDevices\\SexyDriver");
+
+		// Видалення символічного посилання
+		IoDeleteSymbolicLink(&symbolic_link);
+
+		// Видалення об'єкта пристрою
+		IoDeleteDevice(driver_object->DeviceObject);
+	}
+
 
 	//Note: Todo
 	NTSTATUS device_control(PDEVICE_OBJECT device_object, PIRP irp)
@@ -134,9 +147,9 @@ namespace driver
 NTSTATUS driver_main(PDRIVER_OBJECT driver_object, PUNICODE_STRING registry_path)
 {
 	UNREFERENCED_PARAMETER(registry_path);
-
+	debug_print("[+] Driver device successfully created .\n");
 	UNICODE_STRING device_name = {};
-	RtlInitUnicodeString(&device_name, L"\\Driver\\SexyDriver");
+	RtlInitUnicodeString(&device_name, L"\\Device\\SexyDriver");
 
 	//create driver device obj.
 	PDEVICE_OBJECT device_object = nullptr;
@@ -146,8 +159,11 @@ NTSTATUS driver_main(PDRIVER_OBJECT driver_object, PUNICODE_STRING registry_path
 	{
 		debug_print("[-] Failed to create driver device.\n");
 	}
-	debug_print("[+] Driver device successfully created .\n");
-
+	else
+	{
+		debug_print("[+] Driver device successfully created .\n");
+	}
+	//debug_print("[+] Driver device successfully created .\n");
 	UNICODE_STRING symbolic_link = {};
 	RtlInitUnicodeString(&symbolic_link, L"\\DosDevices\\SexyDriver");
 	
@@ -156,18 +172,26 @@ NTSTATUS driver_main(PDRIVER_OBJECT driver_object, PUNICODE_STRING registry_path
 	{ 
 		debug_print("[-] Failed to establish symbolic link.\n");
 	}
-	debug_print("[+] Driver symbolic link successfully establish .\n");
+	else
+	{
+		debug_print("[+] Driver symbolic link successfully establish .\n");
+	}
+	//debug_print("[+] Driver symbolic link successfully establish .\n");
 
 
 	//Allow us yo send small amounts of data between um/km.
 	SetFlag(device_object->Flags, DO_BUFFERED_IO);
 
+	
 	driver_object->MajorFunction[IRP_MJ_CREATE] = driver::create;
 	driver_object->MajorFunction[IRP_MJ_CLOSE] = driver::close;
 	driver_object->MajorFunction[IRP_MJ_DEVICE_CONTROL] = driver::device_control;
+	
+	// Призначення функції unload
+	driver_object->DriverUnload = driver::unload;
 
 	ClearFlag(device_object->Flags, DO_DEVICE_INITIALIZING);
-	debug_print("[-] Driver initialized successfully.\n");
+	debug_print("[+] Driver initialized successfully.\n");
 	return STATUS_SUCCESS;
 }
 
@@ -176,7 +200,8 @@ NTSTATUS DriverEntry()
 {
 	debug_print("[+] Hello from the kernel!\n");
 	UNICODE_STRING driver_name = {};
-	RtlInitUnicodeString(&driver_name, L"\\Driver\\SexyDriver");
 
-	return IoCreateDriver(&driver_name,&driver_main);
+	RtlInitUnicodeString(&driver_name, L"\\Driver\\SexyDriver");
+	//debug_print("[+] SexyDriver!\n");
+	return IoCreateDriver(&driver_name, &driver_main);	
 }
