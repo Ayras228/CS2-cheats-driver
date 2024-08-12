@@ -141,9 +141,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\driver_manager.cpp" />
+    <ClCompile Include="src\process_utils.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\driver_manager.h" />
+    <ClInclude Include="src\process_utils.h" />
     <ClInclude Include="src\buttons.hpp" />
     <ClInclude Include="src\client_dll.hpp" />
     <ClInclude Include="src\offsets.hpp" />
