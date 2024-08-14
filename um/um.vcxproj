@@ -141,16 +141,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\aim_bot.cpp" />
+    <ClCompile Include="src\bunny_hop.cpp" />
     <ClCompile Include="src\driver_manager.cpp" />
     <ClCompile Include="src\process_utils.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\cs2_data\buttons.hpp" />
+    <ClInclude Include="src\cs2_data\client_dll.hpp" />
+    <ClInclude Include="src\cs2_data\offsets.hpp" />
     <ClInclude Include="src\driver_manager.h" />
     <ClInclude Include="src\process_utils.h" />
-    <ClInclude Include="src\buttons.hpp" />
-    <ClInclude Include="src\client_dll.hpp" />
-    <ClInclude Include="src\offsets.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

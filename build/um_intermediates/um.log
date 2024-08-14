@@ -1,3 +1,2 @@
-﻿  driver_manager.cpp
-D:\C++\sexy-driver\um\src\driver_manager.cpp(25,26): warning C4312: 'reinterpret_cast': conversion from 'const DWORD' to 'HANDLE' of greater size
+﻿  main.cpp
   um.vcxproj -> D:\C++\sexy-driver\build\um.exe
