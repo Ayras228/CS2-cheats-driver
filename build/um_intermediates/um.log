@@ -1,2 +1,3 @@
-﻿  main.cpp
+﻿  aim_bot.cpp
+D:\C++\sexy-driver\um\src\aim_bot.cpp(96,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   um.vcxproj -> D:\C++\sexy-driver\build\um.exe
