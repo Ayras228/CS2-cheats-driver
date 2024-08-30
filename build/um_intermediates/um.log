@@ -1,3 +1,53 @@
 ﻿  aim_bot.cpp
-D:\C++\sexy-driver\um\src\aim_bot.cpp(96,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\aim_bot.cpp(257,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\aim_bot.cpp(258,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\aim_bot.cpp(274,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\C++\sexy-driver\um\src\aim_bot.cpp(280,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\aim_bot.cpp(282,50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\aim_bot.cpp(283,52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\aim_bot.cpp(269,18): warning C4101: 'Norm': unreferenced local variable
+D:\C++\sexy-driver\um\src\aim_bot.cpp(485,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\aim_bot.cpp(517,39): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+D:\C++\sexy-driver\um\src\aim_bot.cpp(517,32): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  bunny_hop.cpp
+  aimbot.cpp
+  entity.cpp
+  driver_manager.cpp
+D:\C++\sexy-driver\um\src\driver_manager.cpp(25,26): warning C4312: 'reinterpret_cast': conversion from 'const DWORD' to 'HANDLE' of greater size
+  vector.cpp
+D:\C++\sexy-driver\um\src\math\vector.cpp(43,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\math\vector.cpp(44,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  process_utils.cpp
+  main.cpp
+D:\C++\sexy-driver\um\src\aim_bot.cpp(257,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(258,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(274,15): warning C4305: 'initializing': truncation from 'double' to 'float'
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(280,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(282,50): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(283,52): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(269,18): warning C4101: 'Norm': unreferenced local variable
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(485,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(517,39): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\aim_bot.cpp(517,32): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+  Generating Code...
   um.vcxproj -> D:\C++\sexy-driver\build\um.exe
