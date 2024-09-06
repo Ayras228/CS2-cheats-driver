@@ -141,33 +141,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-<<<<<<< Updated upstream
-    <ClCompile Include="src\aim_bot.cpp" />
-    <ClCompile Include="src\bunny_hop.cpp" />
-    <ClCompile Include="src\driver_manager.cpp" />
-=======
+
     <ClCompile Include="src\Aim_Bot\aim_bot.cpp" />
     <ClCompile Include="src\Aim_Bot\Reader.cpp" />
     <ClCompile Include="src\Aim_Bot\targeting_logic.cpp" />
     <ClCompile Include="src\Bunny_Hop\bunny_hop.cpp" />
     <ClCompile Include="src\driver_manager.cpp" />
     <ClCompile Include="src\Vectors\Vectors.cpp" />
->>>>>>> Stashed changes
+
     <ClCompile Include="src\process_utils.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< Updated upstream
-    <ClInclude Include="src\cs2_data\buttons.hpp" />
-    <ClInclude Include="src\cs2_data\client_dll.hpp" />
-    <ClInclude Include="src\cs2_data\offsets.hpp" />
-=======
+
     <ClInclude Include="src\Aim_Bot\Reader.h" />
     <ClInclude Include="src\Bone_Structure_unused\Bone_Structure.h" />
     <ClInclude Include="src\CS2_Data\buttons.hpp" />
     <ClInclude Include="src\CS2_Data\client_dll.hpp" />
     <ClInclude Include="src\CS2_Data\offsets.hpp" />
->>>>>>> Stashed changes
+
     <ClInclude Include="src\driver_manager.h" />
     <ClInclude Include="src\process_utils.h" />
     <ClInclude Include="src\Vectors\Vectors.h" />

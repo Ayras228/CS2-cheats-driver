@@ -1,10 +1,6 @@
 ﻿  Building 'km' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
   Stamping D:\C++\sexy-driver\build\km_intermediates\km.inf
-<<<<<<< Updated upstream
-  Stamping [Version] section with DriverVer=08/12/2024,15.10.49.127
-=======
-  Stamping [Version] section with DriverVer=09/02/2024,17.18.46.182
->>>>>>> Stashed changes
+  Stamping [Version] section with DriverVer=09/06/2024,14.10.35.331
   main.cpp
   km.vcxproj -> D:\C++\sexy-driver\build\km.sys
   Driver is 'Universal'.
