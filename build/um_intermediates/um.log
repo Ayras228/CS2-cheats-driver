@@ -1,3 +1,38 @@
 ﻿  aim_bot.cpp
+<<<<<<< Updated upstream
 D:\C++\sexy-driver\um\src\aim_bot.cpp(96,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+=======
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(22,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/Aim_Bot/aim_bot.cpp')
+  
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,39): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  (compiling source file 'src/Aim_Bot/aim_bot.cpp')
+  
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,32): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  (compiling source file 'src/Aim_Bot/aim_bot.cpp')
+  
+  Reader.cpp
+  targeting_logic.cpp
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(22,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,39): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,32): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  bunny_hop.cpp
+  driver_manager.cpp
+D:\C++\sexy-driver\um\src\driver_manager.cpp(25,26): warning C4312: 'reinterpret_cast': conversion from 'const DWORD' to 'HANDLE' of greater size
+  Vectors.cpp
+D:\C++\sexy-driver\um\src\Vectors\Vectors.cpp(181,10): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\Vectors\Vectors.cpp(182,10): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+  process_utils.cpp
+  main.cpp
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(22,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,39): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,32): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  (compiling source file 'src/main.cpp')
+  
+  Generating Code...
+>>>>>>> Stashed changes
   um.vcxproj -> D:\C++\sexy-driver\build\um.exe
