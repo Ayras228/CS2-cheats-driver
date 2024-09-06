@@ -1,7 +1,22 @@
-﻿  targeting_logic.cpp
+﻿  Reader.cpp
+  aim_bot.cpp
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(22,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file 'src/Aim_Bot/aim_bot.cpp')
+  
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,39): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  (compiling source file 'src/Aim_Bot/aim_bot.cpp')
+  
+D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,32): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  (compiling source file 'src/Aim_Bot/aim_bot.cpp')
+  
+  targeting_logic.cpp
 D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(22,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
 D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,39): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
 D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,32): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+  bunny_hop.cpp
+  Vectors.cpp
+D:\C++\sexy-driver\um\src\Vectors\Vectors.cpp(181,10): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\C++\sexy-driver\um\src\Vectors\Vectors.cpp(182,10): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
   main.cpp
 D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(22,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
   (compiling source file 'src/main.cpp')
@@ -12,5 +27,7 @@ D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,39): warning C4244: 'ar
 D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp(53,32): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
   (compiling source file 'src/main.cpp')
   
+  process_utils.cpp
   Generating Code...
+  LINK : D:\C++\sexy-driver\build\um.exe not found or not built by the last incremental link; performing full link
   um.vcxproj -> D:\C++\sexy-driver\build\um.exe
