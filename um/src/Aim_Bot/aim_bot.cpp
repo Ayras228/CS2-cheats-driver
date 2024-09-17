@@ -19,7 +19,8 @@
 
 #include"targeting_logic.cpp"
 
-
+#include <iostream>
+#include <thread>
 
 namespace _offset 
 {
@@ -43,14 +44,17 @@ namespace _offset
 
 static void aim_bot(DriverManager& driver_manager, const std::uintptr_t& client)
 {
-	Reader reader(client);
+	Reader reader(driver_manager,client);
+	std::thread thread_read_players = reader.ThreadReadPlayers();
+	
+	//do thread while
 	while (true)
 	{
 		// sleep for 1ms to save cpu %
 		std::this_thread::sleep_for(std::chrono::milliseconds(1));
 
 		
-		reader.ReadPlayers(driver_manager,client);
+		
 		// get our view_matrix
 		auto view_matrix = driver_manager.read_memory<view_matrix_t>(reader.client + _offset::dwViewMatrix);
 		// create our playerPositions vector, although i would recommend moving this out of the loop.
@@ -92,4 +96,5 @@ static void aim_bot(DriverManager& driver_manager, const std::uintptr_t& client)
 			MoveMouseToPlayer(closest_player, center_of_screen); //closest_player
 		}
 	}
+	thread_read_players.detach();
 }

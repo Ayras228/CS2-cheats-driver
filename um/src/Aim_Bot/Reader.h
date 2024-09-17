@@ -9,8 +9,9 @@
 #include"../CS2_Data/buttons.hpp"
 
 #include <vector>
-
-
+#include <iostream>
+#include <thread>
+#include<memory>
 
 class C_CSPlayerPawn
 {
@@ -28,11 +29,14 @@ inline C_CSPlayerPawn CCSPlayerPawn;
 class Reader
 {
 public:
-	Reader(const std::uintptr_t& client);
+	Reader(DriverManager& driver_manager, const std::uintptr_t& client);
 
 	uintptr_t client;
-
+	std::shared_ptr<DriverManager> ptr_driver_manager;
 	std::vector<C_CSPlayerPawn> playerList;
+	
+	std::thread ThreadReadPlayers();
 
-	void ReadPlayers(DriverManager& driver_manager, const std::uintptr_t& client);
+	void endlessReadPlayers();
+	void ReadPlayers();
 };

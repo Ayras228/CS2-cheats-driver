@@ -78,12 +78,21 @@
     <OutDir>$(SolutionDir)build\</OutDir>
     <IntDir>$(SolutionDir)build\um_intermediates\</IntDir>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)build\um_intermediates\</IntDir>
+    <OutDir>$(SolutionDir)build\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(SolutionDir)build\um_intermediates\</IntDir>
+    <OutDir>$(SolutionDir)build\</OutDir>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -98,6 +107,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,25 +151,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-
     <ClCompile Include="src\Aim_Bot\aim_bot.cpp" />
     <ClCompile Include="src\Aim_Bot\Reader.cpp" />
     <ClCompile Include="src\Aim_Bot\targeting_logic.cpp" />
     <ClCompile Include="src\Bunny_Hop\bunny_hop.cpp" />
     <ClCompile Include="src\driver_manager.cpp" />
     <ClCompile Include="src\Vectors\Vectors.cpp" />
-
     <ClCompile Include="src\process_utils.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-
     <ClInclude Include="src\Aim_Bot\Reader.h" />
     <ClInclude Include="src\Bone_Structure_unused\Bone_Structure.h" />
     <ClInclude Include="src\CS2_Data\buttons.hpp" />
     <ClInclude Include="src\CS2_Data\client_dll.hpp" />
     <ClInclude Include="src\CS2_Data\offsets.hpp" />
-
     <ClInclude Include="src\driver_manager.h" />
     <ClInclude Include="src\process_utils.h" />
     <ClInclude Include="src\Vectors\Vectors.h" />

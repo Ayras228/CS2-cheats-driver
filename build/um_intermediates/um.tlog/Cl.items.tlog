@@ -1,14 +1,8 @@
-<<<<<<< Updated upstream
-D:\C++\sexy-driver\um\src\aim_bot.cpp;D:\C++\sexy-driver\build\um_intermediates\aim_bot.obj
-D:\C++\sexy-driver\um\src\bunny_hop.cpp;D:\C++\sexy-driver\build\um_intermediates\bunny_hop.obj
-D:\C++\sexy-driver\um\src\driver_manager.cpp;D:\C++\sexy-driver\build\um_intermediates\driver_manager.obj
-=======
 D:\C++\sexy-driver\um\src\Aim_Bot\aim_bot.cpp;D:\C++\sexy-driver\build\um_intermediates\aim_bot.obj
 D:\C++\sexy-driver\um\src\Aim_Bot\Reader.cpp;D:\C++\sexy-driver\build\um_intermediates\Reader.obj
 D:\C++\sexy-driver\um\src\Aim_Bot\targeting_logic.cpp;D:\C++\sexy-driver\build\um_intermediates\targeting_logic.obj
 D:\C++\sexy-driver\um\src\Bunny_Hop\bunny_hop.cpp;D:\C++\sexy-driver\build\um_intermediates\bunny_hop.obj
 D:\C++\sexy-driver\um\src\driver_manager.cpp;D:\C++\sexy-driver\build\um_intermediates\driver_manager.obj
 D:\C++\sexy-driver\um\src\Vectors\Vectors.cpp;D:\C++\sexy-driver\build\um_intermediates\Vectors.obj
->>>>>>> Stashed changes
 D:\C++\sexy-driver\um\src\process_utils.cpp;D:\C++\sexy-driver\build\um_intermediates\process_utils.obj
 D:\C++\sexy-driver\um\src\main.cpp;D:\C++\sexy-driver\build\um_intermediates\main.obj
